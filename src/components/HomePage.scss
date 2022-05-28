@@ -1,0 +1,79 @@
+.Container {
+    height: inherit;
+    width: inherit;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    .Sub-Container {
+        width: 1000px;
+        height: fit-content;
+        margin: 30px 0 0 0;
+        box-shadow: 0 0 10px -2px black;
+
+        .Body1 {
+            height: 250px;
+            width: inherit;
+            background-color: white;
+            position: sticky;
+
+            .Note {
+                width: 80%;
+                margin: 40px 0 0 10px;
+            }
+
+            .Date {
+                .Schedule-Date {
+                    margin: 20px 20px 10px 0;
+                }
+
+                .Schedule-Time {
+                    margin: 20px 0 10px 20px;
+                }
+            }
+
+            .Done {
+                margin: 25px 0 0 0;
+                display: flex;
+                justify-content: space-around;
+                .RadioGroup {
+                    display: block;
+                }
+            }
+        }
+
+        .Body2 {
+            .Data-flex {
+                background-color: white;
+                display: flex;
+                // margin: 5px 0 0 0;
+                height: 50px;
+                font-family: "Roboto";
+                font-weight: 500;
+                align-items: center;
+                padding: 0 5px 0 5px;
+
+                .Notes {
+                    height: 20px;
+                    
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+
+    .Pagination {
+        width: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0 0 0;
+        .MuiPaginationItem-page.Mui-selected {
+            background-color: aliceblue;
+        }
+    }
+}
